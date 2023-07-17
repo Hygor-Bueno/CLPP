@@ -1,0 +1,165 @@
+#pageChat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f2f5;
+}
+
+#divChatContainer {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    max-width: 1600px;
+    max-height: 800px;
+    border-radius: 1.2vmin;
+}
+
+#divChatContainer>main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 4%;
+    background-color: #0a9578;
+    border-top-left-radius: 2vmin;
+    border-bottom-left-radius: 2vmin;
+    overflow: hidden
+}
+
+#divChatContainer>main>div>svg {
+    font-size: 2.8vmin;
+    color: #f1f2f5;
+}
+
+.cardContact>.descCardContact {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 75%;
+    font-size: 2vmin;
+}
+
+.cardContact>.descCardContact>.labelDetailsContact {
+    font-size: 1.2vmin;
+}
+
+.cardContact:hover {
+    background-color: #f1f2f5;
+}
+
+.cardContact:hover * {
+    cursor: pointer;
+}
+
+.cardContact>svg {
+    font-size: 2vmin;
+}
+
+#divChatContainer>section {
+    border-right: solid 0.2vmin #dee2e6;
+    background-color: white;
+    height: 100%;
+    width: 26%;
+}
+
+#divChatContainer>section>div, #divChatContainer>aside>div>#chatAsideHeader {
+    height: 10%;
+    border-bottom: solid 0.2vmin #dee2e6;
+}
+
+#chatAsideHeader>div>label {
+    font-size: 2.2vmin;
+}
+
+#divChatContainer>section>span {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 90%;
+}
+
+#divChatContainer>aside {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    overflow-y: auto;
+    border-top-right-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+}
+
+aside {
+    background-image: url("../Assets/Image/logoPPG.png");
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: center center;
+    overflow-y: auto;
+}
+
+#chatAsideBody {
+    overflow-y: scroll;
+    padding: 1.2vmin;
+    height: 78%;
+    background-color: white;
+}
+
+#chatAsideFooter {
+    font-size: 2.8vmin;
+    border-top: solid 0.2vmin #dee2e6;
+}
+
+#chatAsideFooter>textarea {
+    width: 90%;
+    font-size: 2vmin;
+    height: 100%;
+    resize: none;
+}
+
+#chatAsideFooter>svg {
+    color: #666;
+}
+
+/* Estilo para o balão da mensagem recebida */
+.message-received {
+    background-color: #F1F0F0;
+    color: #000000;
+    border-radius: 2vmin;
+    padding: 1vmin;
+    margin-bottom: 1vmin;
+    max-width: 70%;
+    float: left;
+    word-wrap: break-word;
+}
+
+/* Estilo para o balão da mensagem enviada */
+.message-sent {
+    background-color: #3CB371;
+    color: #FFFFFF;
+    border-radius: 2vmin;
+    padding: 1vmin;
+    margin-bottom: 1vmin;
+    max-width: 70%;
+    float: right;
+    word-wrap: break-word;
+}
+
+/* Limpar o float */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fileStyle {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 2vmin;
+}
+
+.fileStyle:hover{
+    cursor: pointer;
+}

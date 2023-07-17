@@ -1,0 +1,31 @@
+.loading-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 110;
+  }
+  
+  .loading-spinner {
+    border: 4px solid #6baf26; /* Cor primária da Peg Pese */
+    border-top: 4px solid #FFFFFF; /* Cor secundária da Peg Pese */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

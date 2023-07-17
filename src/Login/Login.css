@@ -1,0 +1,27 @@
+:root{
+    --w_h_logo : 20vmin
+}
+#pageLogin{
+    background-image:url('../Assets/Image/bg_interlagos.jpg');
+    background-size: cover;
+}
+#pageLogin > form >img{
+    height: var(--w_h_logo);
+    width: var(--w_h_logo);
+}
+#pageLogin > form label{
+    color: #666
+}
+#pageLogin > form > fieldset > div{
+    margin: 0.8vmin 0vmin;
+}
+#pageLogin > form{
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 1.2vmin 1.2vmin 2vmin #aaa;
+    width: 40vmin;
+    height: 50vmin;
+}
+#pageLogin > form button{
+    font-size:2.2vmin;
+    font-weight: bold;
+}
